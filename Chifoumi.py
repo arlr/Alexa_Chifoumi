@@ -9,7 +9,7 @@ ask = Ask(app, '/Chifoumi')
 @ask.launch
 def start_skill():
     welcome_message = "Bonjour dite moi quand vous êtes prêts"  #Message que vas dire Alexa
-    return statement(welcome_message)
+    return question(welcome_message)
 
 @ask.intent('StartIntent')
 def start():
