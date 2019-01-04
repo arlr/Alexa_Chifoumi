@@ -13,7 +13,7 @@ def start_skill():
 
 @ask.intent('StartIntent')
 def start():
-    text = "D'accord tenez vous prêts ...   3 , 2 , 1.  Chiii Fou Mii."
+    text = "D'accord tenez vous prêts .......   3 ...., 2 ..., 1....  Chiii Fou Mi !!!!"
     return statement(text)
 
 @ask.session_ended
