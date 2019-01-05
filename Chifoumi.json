@@ -20,15 +20,58 @@
                     "samples": []
                 },
                 {
-                    "name": "StartIntent",
+                    "name": "MDJ_StartIntent",
                     "slots": [],
                     "samples": [
-                        "Prets",
-                        "Go",
-                        "Je suis prets",
-                        "Nous sommes prets",
-                        "C'est parti",
-                        "Je suis prets"
+                        "Sois le maître du jeu",
+                        "Je veux que tu sois le maître du jeu"
+                    ]
+                },
+                {
+                    "name": "JeuxIntent",
+                    "slots": [],
+                    "samples": [
+                        "Je veux jouer avec toi",
+                        "Je veux jouer",
+                        "Je veux que l'on joue enssemble"
+                    ]
+                },
+                {
+                    "name": "ItemIntentt",
+                    "slots": [
+                        {
+                        "name": "Item",
+                        "type": "ItemValue",
+                        "samples": [
+                            "{item}"
+                            ]
+                        }
+                    ]
+                            ,
+                    "samples": [
+                        "{item}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "Item",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "pierre"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "feuille"
+                            }
+                        },
+                        {
+                            "name":{
+                                "value": "ciseau"
+                            }
+                        }
                     ]
                 }
             ]
