@@ -41,21 +41,18 @@
                     "slots": [
                         {
                         "name": "Item",
-                        "type": "ItemValue",
-                        "samples": [
-                            "{item}"
-                            ]
+                        "type": "ITEM_VALUE"
                         }
                     ]
                             ,
                     "samples": [
-                        "{item}"
+                        "{Item}"
                     ]
                 }
             ],
             "types": [
                 {
-                    "name": "Item",
+                    "name": "ITEM_VALUE",
                     "values": [
                         {
                             "name": {
@@ -76,5 +73,6 @@
                 }
             ]
         }
+        
     }
 }
