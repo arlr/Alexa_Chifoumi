@@ -14,10 +14,11 @@ def regle(Alexa , Player):
     print("Fonction regle")
     if (((str(Alexa) == "pierre") and (str(Player) == "ciseau")) or ((str(Alexa) == "feuille") and (str(Player) == "pierre")) or ((str(Alexa) == "ciseaux") and (str(Player) == "feuille"))):
         text = "Alexa à gagnée"
-        return(text)
+        #return(text)
     else:
         text = "Vous avez gagné"
-        return(text)
+    print(text)
+    return(text)
 
 @ask.launch
 def start_skill():
