@@ -21,7 +21,7 @@ def regle(Alexa , Player):
 
 @ask.launch
 def start_skill():
-    welcome_message = "Bonjour, voulez-vous que je sois le matre du jeu ou que je joue avec vous ?"  #Message que vas dire Alexa
+    welcome_message = "Bonjour, voulez-vous que je sois le maître du jeu ou que je joue avec vous ?"  #Message que vas dire Alexa
     return question(welcome_message)
 
 #@ask.intent('ChoixIntent')
@@ -48,12 +48,12 @@ def In_game(Item):
     joueurText = "Joueur : " + Item
     print(joueurText)
 
-    if str(AlexaItem) == str(Item):
+    if (str(AlexaItem) == str(Item)):
         phrase = "J'ai choisi " + Item +" aussi nous avons donc fais égalité"
-        return(phrase)
+        #return(phrase)
     else:
         phrase = regle(AlexaItem, Item)
-        return(phrase) 
+    return(phrase) 
 
 
 
