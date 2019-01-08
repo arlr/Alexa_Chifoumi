@@ -13,12 +13,12 @@ def regle(Alexa , Player):
     #Alexa Win
     print("Fonction regle")
     if (((str(Alexa) == "pierre") and (str(Player) == "ciseau")) or ((str(Alexa) == "feuille") and (str(Player) == "pierre")) or ((str(Alexa) == "ciseaux") and (str(Player) == "feuille"))):
-        text = "Alexa à gagnée"
+        text = "Desolé mais vous avez perdu, Alexa à gagnée"
         #return(text)
     else:
-        text = "Vous avez gagné"
+        text = "Super ! Vous avez gagné"
 
-    text = text + "1"    
+        
     print(text)
     return(text)
 
@@ -34,12 +34,12 @@ def start_skill():
 
 @ask.intent('MDJ_StartIntent')
 def MDJ_start():
-    phrase = "D'accord c'est parti  .......   3 ...., 2 ..., 1....  Chiii Fou My !!!!"
+    phrase = "D'accord c'est parti  .......   3 ...., 2 ..., 1....  Chiii Fou Miii !!!!"
     return statement(phrase)
 
 @ask.intent('JeuxIntent')
 def Jeux_Start():
-    phrase = "D'accord c'est parti, dite moi ce que vous avez choisi ?"
+    phrase = "D'accord c'est parti, choisissez entre Pierre, Papier ou Ciseaux et dite moi ce que vous avez choisi ?"
     return question(phrase)
 
 @ask.intent('ItemIntentt')
@@ -50,7 +50,6 @@ def In_game(Item):
     print(alexaText)
     joueurText = "Joueur : " + Item
     print(joueurText)
-
     if (str(AlexaItem) == str(Item)):
         
         phrase = "J'ai choisi " + Item +" aussi nous avons donc fais égalité"
