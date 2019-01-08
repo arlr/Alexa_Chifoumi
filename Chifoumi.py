@@ -19,7 +19,7 @@ def regle(Alexa , Player):
         text = "Super ! Vous avez gagné"
 
         
-    print(text)
+    #print(text)
     return(text)
 
 @ask.launch
