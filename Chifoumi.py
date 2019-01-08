@@ -5,7 +5,7 @@ from flask_ask import Ask, statement, question
 from random import *
 
 app = Flask(__name__)
-ask = Ask(app, '/Chifoumi')
+ask = Ask(app, '/')
 
 item_list = ["pierre", "feuille", "ciseaux" ]
 
@@ -71,4 +71,4 @@ def session_ended():
     return "{}", 200
 
 if __name__ == '__main__':
-    app.run( port=80, debug=True,ssl_context=('cert.pem', 'key.pem'))
+    app.run(port=80, debug=True,ssl_context=('cert.pem', 'key.pem'))
