@@ -9,7 +9,7 @@ ask = Ask(app, '/')
 
 item_list = ["pierre", "feuille", "ciseaux" ]
 
-@app.route('/Chifoumi')
+@app.route('/')
 def homepage():
     return "Page de Chifoumi"
 
