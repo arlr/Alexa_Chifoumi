@@ -58,7 +58,7 @@ def In_game(Item):
     else:
         phrase = regle(AlexaItem, Item)
     print(phrase)
-    return(phrase) 
+    return statement(phrase) 
 
 
 
