@@ -9,7 +9,7 @@ ask = Ask(app, '/')
 
 item_list = ["pierre", "feuille", "ciseaux" ]
 
-@app.route('/chifoumi')
+@app.route('/')
 def homepage():
     return "Page de Chifoumi"
 
@@ -71,4 +71,4 @@ def session_ended():
     return "{}", 200
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0',debug=True)
+    app.run(host='0.0.0.0',debug=True,ssl_context=('cert.pem', 'key.pem'))
