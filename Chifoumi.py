@@ -9,6 +9,10 @@ ask = Ask(app, '/Chifoumi')
 
 item_list = ["pierre", "feuille", "ciseaux" ]
 
+@app.route('/')
+def homepage():
+    return "Page de Chifoumi"
+
 def regle(Alexa , Player):
     #Alexa Win
     print("Fonction regle")
