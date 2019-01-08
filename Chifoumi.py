@@ -17,6 +17,8 @@ def regle(Alexa , Player):
         #return(text)
     else:
         text = "Vous avez gagné"
+
+    text = text + "1"    
     print(text)
     return(text)
 
@@ -50,10 +52,12 @@ def In_game(Item):
     print(joueurText)
 
     if (str(AlexaItem) == str(Item)):
+        
         phrase = "J'ai choisi " + Item +" aussi nous avons donc fais égalité"
         #return(phrase)
     else:
         phrase = regle(AlexaItem, Item)
+    print(phrase)
     return(phrase) 
 
 
